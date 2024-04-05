@@ -1,0 +1,122 @@
+@media (min-width:1400px){
+    .container{
+        max-width: 1250px;
+    }
+    .wine-item{
+        position: relative;
+        object-fit: cover;
+        height: 100%;
+        cursor: pointer;
+    }
+    .wine-item:first-child{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .wine-item:last-child{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    .main-respon{
+        display: none;
+    }
+}
+@media (max-width:1399px ){
+    .button-web{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+    .header-contact{
+        background-color: var(--main-color);
+    }
+    .container{
+        max-width:750px
+    }
+    .header-menu{
+        display: none;
+    }
+    .container.container-slider {
+        height: 400px;
+        margin-top: 80px;
+    }
+    .wine-content{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 240px 240px 240px;
+    }
+    .wine-name span,
+    .wine-price span{
+        font-size: 1.4rem;
+        word-wrap: break-word;
+        display: block;
+    }
+    .content-popular-img img{
+        transform: translateX(0);
+    }
+    .footer-content{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+@media(max-width:1023px){
+   .container{
+       max-width: 600px;
+   }
+   .wine-count--box{
+       padding: 40px 0;
+   }
+   .wine-content{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 190px 190px 190px;
+    }
+    .wine-name span,
+    .wine-price span{
+        font-size: 1.1rem;
+        word-wrap: break-word;
+        display: block;
+    }
+}
+@media only screen and (max-width:480px) {
+    html{
+      width: 100vw;
+      overflow-x: hidden;
+    }
+    .row{
+        margin-right: -18px;
+        margin-left: 1px;
+    }
+    .container{
+        max-width: 350px;
+    }
+    .container.container-slider{
+        height: 200px;
+    }
+    .slider-wrap{
+        grid-gap:15px;
+    }
+    .pre-slider-btn,
+    .next-slider-btn{
+        padding: 8px 16px;
+        top: 40%;
+    }
+    .content-checking{
+        margin-top: 50px;
+    }
+    .wine-content {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 150px 150px 150px 500px;
+    }
+    .wine-item:nth-child(3){
+        grid-row: 4/5;
+        grid-column: 1/3;
+    }
+    .content-slider img{
+        width: 97%;
+    }
+    .wine-name span,
+    .wine-price span{
+        font-size: 1.1rem;
+        word-wrap: break-word;
+        display: block;
+    }
+}
